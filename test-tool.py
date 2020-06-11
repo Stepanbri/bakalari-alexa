@@ -35,7 +35,7 @@ def ask(url_address, token):    #pokladá otázku a zpracovává příkazy
     else:
         print(" ")
         print("Načítám...")
-        data = get_module(url_address, token, a)
+        data = get_module(url_address, token, target)
         print("Ukládám...")
         file = open(target + ".xml", "w", encoding="utf-8") #uloží soubor
         file.write(data)
